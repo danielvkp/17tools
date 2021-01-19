@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/master.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>L7.tools</h1>
+    </div>
+
+    <div class="monitor">
+        <h2>Monitor</h2>
+        <div class="info">
+            <div class="labels">
+                <p>Delta arbitraje:</p>
+                <p>Delta cliente: </p>
+                <p>Profit cliente:</p>
+            </div>
+            <div class="values">
+                <p id="delta_arbitraje">N/A</p>
+                <p id="delta_cliente">N/A</p>
+                <p id="profit_cliente">N/A</p>
+            </div>
+        </div>
+
+        <div class="info">
+            <div class="labels">
+                <p>Venta: </p>
+                <p>Compra:</p>
+            </div>
+            <div class="values">
+                <p id="max_name" class="venta">N/A</p>
+                <p id="min_name" class="compra">N/A</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="max_and_min">
+
+    </div>
+
+    <div class="balance-options">
+        <label class="container">Balance
+            <input id="balance_option" type="radio" name="sref" value="B">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">Referencia (1 BTC)
+            <input id="reference_opcion" type="radio" name="sref" value="R" checked>
+            <span class="checkmark"></span>
+        </label>
+    </div>
+
+    <div class="buttons-group">
+        <input id="interval_time" type="text" name="" value="30">
+        <button id="mega_botom" type="button" class="btn btn-blue">iniciar</button>
+        <button id="mega_botom_stop" type="button" class="btn btn-red">parar</button>
+    </div>
+
+    <script src="scripts/popup.js" charset="utf-8"></script>
+</body>
+
+</html>
